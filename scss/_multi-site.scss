@@ -1,0 +1,159 @@
+
+.multi-sec {
+	&:before {
+		background-image: url(../images/multi-site-right.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-position: center;
+	    transform: none;
+	    width: 182px;
+	    top: 40%;
+	    height: 784px;
+	    right: 5%;
+	  
+	}
+	&:after{
+	    background-image: url(../images/multi-site-left.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-position: center;
+	      width: 371px;
+	    height: 845px;
+	    left: 0;
+	    transform: none;
+	    top: 5%;
+	}
+}
+
+.w100Sec{
+	width: 100%;
+	max-width: 100%;
+	.wrap {
+		width: 100%;
+		max-width: 100%;
+		.sec-key{
+			padding: 50px 50px 60px 0;
+			border-top: 1px solid rgba(38, 49, 66, 0.2);
+			&:nth-child(1){
+				border-top: none;
+			}
+			@media(min-width: 992px) {
+				max-width: 50%;
+				&:nth-child(even){
+					padding-left: 50px; padding-right: 0;
+					border-left: 1px solid rgba(38, 49, 66, 0.2);
+				}
+				&:nth-child(2){
+					border-top: none;
+				}
+			}
+			@media(max-width: 767px) {
+				padding:25px 0;
+				 &:last-child{
+				
+					padding-bottom:0
+				}	
+			}
+		}
+	}
+}
+
+.m_organisation{
+	.container {
+		> * {
+			max-width: 1360px;
+		}
+		.cloud-listWrap{
+			max-width: 1100px;
+		}
+	}		
+}
+
+.enterpriseSol {
+	.started-sec {
+		> * {max-width: 100%}
+		@media(min-width: 992px){
+			> * {
+				max-width: 50%;
+			}
+		}
+		h4{margin-bottom: 20px;}
+		p{
+			font-size: $px20;
+			@media(max-width: 767px) {
+				font-size: $px18
+			}
+			@media(max-width: 575px) {
+				font-size: $px16
+			}
+		}
+	}
+	.sol-right-img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		width: 48%;
+		max-width: 48%;
+		@media(max-width: 991px) {
+			display:none
+		}
+	}
+}
+
+.partners {
+	background: #F9FBFF;
+	ul {
+		row-gap: 50px;
+		@media(max-width: 991px) {
+			row-gap: 40px;
+		}
+		@media(max-width: 767px) {
+			row-gap: 30px;
+		}
+		@media(max-width: 575px) {
+			row-gap: 20px;
+		}
+		li {
+			flex: 0 0 20%;
+			text-align: center;
+			img {max-width: 80%}
+			@media(max-width: 991px) {
+				flex: 0 0 25%;
+			}
+			@media(max-width: 767px) {
+				flex: 0 0 33.33%;
+			}
+		}
+	}	
+}
+
+
+.performane-sec{
+	margin: 0 auto;
+	max-width: 1540px;
+	row-gap: 40px;
+	.grid-04{
+		font-size: 0;
+		padding: 0 20px;
+		&.bottom-right {
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+}
+
+
+
+.dashboard {
+	@media(max-width: 575px) {
+		text-align: center
+	}
+}
+
+.cloud-list-wrap {
+	@media(max-width: 575px) {
+		justify-content:center
+	}
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Policy</title>
+    <link media="all" rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Ubuntu:300,400,500,600,700;" rel="stylesheet">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js" defer><\/script>')</script> -->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+
+    <!-- Fav icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png?v=ng9kKQAbkr">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=ng9kKQAbkr">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png?v=ng9kKQAbkr">
+    <link rel="manifest" href="../site.webmanifest?v=ng9kKQAbkr">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg?v=ng9kKQAbkr" color="#273542">
+    <link rel="shortcut icon" href="../favicon.ico?v=ng9kKQAbkr">
+    <meta name="apple-mobile-web-app-title" content="QUBS">
+    <meta name="application-name" content="QUBS">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Fav icons -->
+
+    <script src="../js/jquery.main.js" defer></script>
+    <script src="../js/jquery.validate.min.js"></script>
+
+</head>
+
+<body class="contact">
+    <header id="header">
+        <div class="container">
+            <a href="https://qubs.com" class="logo-holder">
+                <img class="b-w-logo" src="../images/qubs-logo-gray.png" alt="QUBS gray logo">
+                <img class="color-logo" src="../images/qubs-logo.svg" alt="QUBS coloured logo">
+            </a>
+            <div class="nav-icon desktop-hide">
+                <div class="nav-icon-item icon-item-top"></div>
+                <div class="nav-icon-item icon-item-center"></div>
+                <div class="nav-icon-item icon-item-bottom"></div>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">For Clinics</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/ris">RIS</a></li>
+                            <li><a href="/pacs">PACS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="..//patients">For Patients</a>
+                    </li>
+                    <li>
+                        <a href="..//referrers">For Referrers</a>
+                    </li>
+                    <li>
+                        <a href="https://help.qubs.com">Resources</a>
+                    </li>
+                    <li id="sign-up">
+                        <a class="typeform-share button" href="https://qubs.typeform.com/to/SmVxfH?company=qubs"
+                            data-mode="popup" data-submit-close-delay="5" target="_blank">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="..//app/login">
+                <button href="/app/login" class="btn">
+                    <span class="mobile-hide">log in</span>
+                    <span class="desktop-hide">log in</span>
+                </button>
+            </a>
+        </div>
+    </header>
+    <main role="main" id="main">
+        <section class="gradient-bg-from-LTR">
+            <div class="container">
+                <div class="heading-light">
+                    <p>Version 1.1 - April 2023</p>
+                    <p>This policy outlines: 1) QUBS's security practices and resources, and 2) your security
+                        obligations.
+
+                        Obligations under this policy (both ours and yours) are incorporated by reference into the QUBS
+                        Service Agreement.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skew-corner">
+            <svg class="skew-before" viewBox="0 0 1675 40" preserveAspectRatio="none">
+                <polygon points="0,0 1675,30 1675,40 0,40 0,0" fill="(0, 0%,)"></polygon>
+            </svg>
+            <div class="container">
+                <div class="heading">
+                    <h2>
+                        Security Policy</h2>
+                </div>
+                <div>
+
+                    <h4>Defined Terms</h4>
+
+                    <ol>
+                        <li>In this Security Policy, the following words shall mean:</li>
+                        <br>
+                        <p><b>QUBS</b> means the company offering the Services under this Security Policy.</p>
+                        <p><b>Services</b> refers to any services, products, or solutions provided by QUBS, including
+                            but not limited to software, applications, and support.</p>
+                        <p><b>Your Content</b> refers to any data, information, or materials submitted, uploaded, or
+                            otherwise provided by you or your users in connection with your use of the Services.</p>
+                        <p><b>AWS</b> refers to Amazon Web Services, a subsidiary of Amazon.com, Inc., which provides
+                            cloud computing infrastructure and services on which QUBS Services are hosted.</p>
+                        <p><b>Data Center</b> refers to the physical facilities where AWS stores, processes, and manages
+                            Your Content and other data associated with the Services.</p>
+                        <p><b>DICOM</b> refers to Digital Imaging and Communications in Medicine, a standard for storing
+                            and transmitting medical images.</p>
+                        <p><b>PITR</b> refers to Point-in-Time Recovery, a feature that provides automatic backups of
+                            data at specified intervals.</p>
+
+
+
+                        <p><b>Environmental Security</b> refers to the measures taken to protect the Data Center from
+                            environmental hazards, such as fire, flooding, power outages, and temperature fluctuations.
+                        </p>
+
+
+                        <p><b>Network Security</b> refers to the measures taken to protect the infrastructure and
+                            systems that transmit, process, and store Your Content against unauthorized access, data
+                            breaches, and other security threats.</p>
+
+                        <p><b>High Availability</b> refers to the design and operation of the Services to ensure they
+                            remain accessible and operational in the event of component failures, network outages, or
+                            other issues that could impact system performance.</p>
+
+                        <p><b>Fault Tolerance</b> refers to the ability of the Services to continue functioning despite
+                            the failure of one or more components, systems, or infrastructure elements.</p>
+                    </ol>
+
+
+
+                    <h4>Our Obligations</h4>
+
+                    <p>Without limiting any provision of the QUBS Terms of Service, we will implement reasonable and
+                        appropriate measures designed to help you secure Your Content against accidental or unlawful
+                        loss, access or disclosure.</p>
+
+
+                    <h4>Your Obligations</h4>
+
+
+                    <p> Our documentation may specify restrictions on how the Services may be configured. You agree to
+                        comply with any such restrictions or specifications.</p>
+
+                    <p>QUBS access credentials and private keys generated by the Services are for your internal use
+                        only. You may not sell, transfer, or sublicense them to any other entity or person, except that
+                        you may disclose your private key to your agents and subcontractors performing work on your
+                        behalf.</p>
+ 
+ 
+                    <h4>Reporting Security Vulnerabilities</h4>
+
+                    <p>If you discover a potential security vulnerability, we strongly prefer that you notify us in
+                        private. Publicly disclosing a security vulnerability without informing us first puts the
+                        community at risk. When you notify us of a potential problem, we will work with you to make sure
+                        we understand the scope and cause of the issue. Please report security vulnerabilities to
+                        security@qubs.com or use our contact form. Thank you!</p>
+
+
+
+
+                    <h4>Data Center Security</h4>
+
+                    <p>QUBS runs on the Amazon Web Services global infrastructure platform.</p>
+
+                    <p> AWS publishes an <a
+                            href="https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf">"Overview
+                            of Security Processes"</a> whitepaper that serves as the reference
+                        material for this section. SOC 2 reports are available directly from AWS upon request.
+                    </p>
+
+                    <p> Please note that while we rely on AWS for data center security and take precautions to protect
+                        your data, we cannot guarantee the absolute security of the information stored in AWS data
+                        centers.
+                    </p>
+
+
+
+                    <ol>
+                        <li>
+                            <h4>Compliance</h4>
+                            <p>AWS computing environments are continuously audited, with certifications from
+                                accreditation bodies across geographies and verticals, including ISO 27001, FedRAMP,
+                                DoD CSM, and PCI DSS. Additionally AWS also has assurance programs that provide
+                                templates and control mappings to help customers establish the compliance of their
+                                environments running on AWS against 20+ standards, including the HIPAA, CESG (UK),
+                                and Singapore Multi-tier Cloud Security (MTCS) standards.</p>
+                        </li>
+
+                        <li>
+                            <h4>Physical Security</h4>
+                            <p>AWS data centers are housed in nondescript facilities. Physical access is strictly
+                                controlled both at the perimeter and at building ingress points by professional security
+                                staff utilizing video surveillance, intrusion detection systems, and other electronic
+                                means. Authorized staff must pass two-factor authentication a minimum of two times to
+                                access data center floors. All visitors and contractors are required to present
+                                identification and are signed in and continually escorted by authorized staff.</p>
+
+                            <p>
+                                <a href="https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf">"Amazon
+                                    Web Services: Overview of Security Processes - May 2017"</a>
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <h4>Environmental Security</h4>
+                            <p>AWS data center environmental controls include:
+
+                            <ul>
+                                <li> Fire detection and suppression systems </li>
+                                <li> Redundant power systems, backed by Uninterruptible Power Supply units and
+                                    generators </li>
+                                <li> Climate and temperature controls </li>
+                                <li> Active system monitoring </li>
+                            </ul>
+
+                            </p>
+
+                            <p>
+                                <a href="https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf">"Amazon
+                                    Web Services: Overview of Security Processes - May 2017"</a>
+                            </p>
+
+                        </li>
+
+                    </ol>
+
+                    <h4>QUBS Network Security</h4>
+
+                    <p> Please note that while we implement various network security measures and rely on AWS for
+                        certain aspects of network security, we cannot guarantee the absolute security of the
+                        information transmitted over the network. We encourage you to take appropriate precautions to
+                        protect your data and information.
+                    </p>
+
+                    <ol>
+                        <li>
+                            <h4>Firewalls</h4>
+                            <p>All public-facing EC2 instances use inbound Security Group rules configured in deny-all
+                                mode. Ports are opened as necessary for: administrative SSH access, QUBS Deploy SSH
+                                Portal Access. </p>
+                        </li>
+
+                        <li>
+                            <h4>Port Scanning</h4>
+                            <p>AWS monitors and stops unauthorized port scanning. All QUBS hosts run strict firewalls,
+                                port scanning is generally
+                                ineffective. </p>
+                        </li>
+
+                        <li>
+                            <h4>Spoofing & Sniffing</h4>
+                            <p>The AWS network prohibits a host from sending traffic with a source IP or MAC address
+                                other than its own. The AWS hypervisor will also not deliver any traffic to a host the
+                                traffic is not addressed to, meaning even an instance running in promiscuous mode will
+                                not receive or be able to "sniff" traffic intended for other hosts. </p>
+                        </li>
+
+
+                    </ol>
+
+
+
+                    <h4> Data Encryption</h4>
+                    <p> To ensure the protection of sensitive data, we employ encryption both in transit and at rest:
+                    </p>
+
+                    <ol>
+                        <li>
+                            <h4>In Transit</h4>
+                            <p>All data transmitted between our servers and customers is secured using SSL/TLS
+                                encryption. This helps protect the confidentiality and integrity of data as it travels
+                                over the
+                                internet. </p>
+                        </li>
+
+                        <li>
+                            <h4>At Rest</h4>
+                            <p>Customer data stored on our servers is encrypted using industry-standard AES-256
+                                encryption. This provides an additional layer of security for sensitive information,
+                                even if
+                                unauthorized access to our systems occurs. </p>
+                        </li>
+                    </ol>
+
+
+
+
+                    <h4>Business Continuity</h4>
+
+                    <p> Please note that while we implement business continuity measures and rely on AWS for certain
+                        aspects of our infrastructure, we cannot guarantee absolute protection against data loss or
+                        system failures. We encourage you to take appropriate precautions and consult with legal
+                        professionals for comprehensive protection.
+
+                    </p>
+
+                    <ol>
+                        <li>
+                            <h4>Backups</h4>
+
+                            <p>
+                                QUBS point-in-time recovery (PITR) provides automatic backups of your RIS patient
+                                data. The retention period is a fixed 35 days (5 calendar weeks).
+                            </p>
+                            <p>Patient DICOM images are versioned to prevent accidental deletions and to protect
+                                from viruses. Older version are deleted after 30 days</p>
+
+                            <p>Patient scanned documents and attachments are versioned to prevent accidental
+                                deletions and to protect from viruses. Older version are deleted after 30 days</p>
+
+
+                            <p> In the event a user requests the recovery of accidentally deleted data from backups, the
+                                labor costs associated with the recovery process will be passed on to the user. The user
+                                will be informed of the estimated costs and must agree to them before the recovery
+                                process is initiated.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>Fault Tolerance</h4>
+
+                            <p>
+
+                                AWS data centers are clustered into regions, and sub-clustered into availability zones,
+                                each of which is designed as an independent failure zone, meaning they are: </p>
+
+                            <ul>
+                                <li> Physically separated </li>
+                                <li>Located in lower-risk flood plains </li>
+                                <li>Equipped with independent uninterruptable power supplies and onsite backup
+                                    generators </li>
+                                <li>Fed via different grids from independent utilities, and </li>
+                                <li>Redundantly connected to multiple tier-1 transit providers </li>
+                            </ul>
+
+                            <br>
+
+
+                        </li>
+
+                        <li>
+                            <h4>High Availability</h4>
+
+                            <p>All QUBS services are deployed across atlease two availability zones unless the service
+                                is in Beta or Experimental stages </p>
+
+                        </li>
+                    </ol>
+
+
+                    <h4>Liability and Indemnification</h4>
+
+                    <ol>
+                        <li>
+                            <h4>
+                                Limitation of Liability
+                            </h4>
+                            <p>To the maximum extent permitted by applicable law, in no event shall QUBS, its
+                                affiliates, directors, employees, or agents be liable for any indirect, incidental,
+                                special, consequential, or punitive damages, or any loss of profits or revenues, whether
+                                incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible
+                                losses, resulting from your use of the Services or any conduct or content of any third
+                                party on the Services, even if QUBS has been advised of the possibility of such damages.
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <h4>Indemnification</h4>
+                            <p>You agree to defend, indemnify, and hold harmless QUBS, its affiliates, directors,
+                                employees, and agents from and against any and all claims, liabilities, damages, losses,
+                                or expenses, including reasonable attorneys' fees and costs, arising out of or in any
+                                way connected with your access to or use of the Services, or your breach of any
+                                representation, warranty, or other provision of this Security Policy.</p>
+
+                        </li>
+
+                        <li>
+                            <h4>Exceptions:</h4>
+                            <p>Nothing in this Security Policy shall be deemed to exclude or limit your liability for
+                                any indemnifiable claim to the extent that such exclusion or limitation would be
+                                prohibited by applicable law.</p>
+
+                        </li>
+                    </ol>
+  
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo-holder">
+                <a href="#" class="footer-logo">
+                    <img src="../images/logo-footer.png" alt="image description">
+                </a>
+            </div>
+            <div class="nav-holder">
+                <ul>
+                    <li>
+                        <h6>Products</h6>
+                    </li>
+                    <li>
+                        <a href="ris">RIS</a>
+                    </li>
+                    <li>
+                        <a href="pacs">PACS</a>
+                    </li>
+                    <li>
+                        <a href="bridge">BRIDGE</a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <h6>Solutions</h6>
+                    </li>
+                    <li>
+                        <a href="referrers">Referrers</a>
+                    </li>
+                    <li>
+                        <a href="patients">Patients</a>
+                    </li>
+                    <li>
+                        <a href="clinics">Radiology Clinics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h6>Help</h6>
+                    </li>
+                    <li>
+                        <a href="contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://help.qubs.com/">Knowledgebase</a>
+                    </li>
+                    <li>
+                        <a href="status">Status</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h6>Contact Us</h6>
+                    </li>
+                    <li class="footer-contact">
+                        <p>Send us a note to
+                            <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#113;&#117;&#098;&#115;&#046;&#099;&#111;&#109;"
+                                class="email">&#104;&#101;&#108;&#108;&#111;&#064;&#113;&#117;&#098;&#115;&#046;&#099;&#111;&#109;</a>
+                            or
+                        </p>give us a call at
+                        <a class="blue" href="tel:1800838382">1800 83 83 82</a>
+                    </li>
+                    <!-- <li>
+						<ul class="social">
+							<li class="facebook">
+								<a href="#" class="icon-facebook"></a>
+							</li>
+							<li class="twitter">
+								<a href="#" class="icon-twitter"></a>
+							</li>
+							<li class="google-plus">
+								<a href="#" class="icon-google-plus"></a>
+							</li>
+							<li class="linkedin">
+								<a href="#" class="icon-linkedin"></a>
+							</li>
+						</ul>
+					</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© 2020 QUBS</p>
+                <p>ABN: 55 618 205 351 | ACN: 618 205 351</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

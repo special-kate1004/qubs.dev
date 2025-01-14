@@ -1,0 +1,55 @@
+.video-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .4s;
+    opacity: 0;
+    .video-in{
+    	position: absolute;
+    	left: 50%;
+    	top: 50%;
+    	max-height: 80%;
+    	transform: translate(-50% , -50%) ;
+    }
+    .overlay{
+    	cursor: pointer;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(255,255,255,.7);
+	    filter: blur(5px);
+    }
+}
+
+.video-pop01 , .video-pop02{
+	.video-pop{
+		visibility: visible;
+		z-index: 214;
+		opacity: 1;
+	}
+	.video-in{
+		opacity: 0;
+		z-index: -1;
+    	visibility: hidden;
+	}
+}
+.video-pop01{
+	.video-item-01{
+		visibility: visible;
+		z-index: 1;
+		opacity: 1;
+	}
+}
+.video-pop02{
+	.video-item-02{
+		visibility: visible;
+		z-index: 1;
+		opacity: 1;
+	}
+}

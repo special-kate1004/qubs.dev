@@ -1,0 +1,12 @@
+
+.security-sec {
+	.contact-col {
+		.icon{
+			width: 64px;
+			font-size: 0;
+		}
+		.details{
+			width: calc(100% - 64px);
+		}
+	}
+} 

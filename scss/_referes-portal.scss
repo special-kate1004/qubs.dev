@@ -1,0 +1,421 @@
+.refers .main-section{
+        background-image: url(../images/ref-bg.png);
+        background-position: left top 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+.ref-heading {
+    max-width: 1023px;
+    margin: 0 auto;
+    text-align: center;
+
+    h3 {
+        font-size: $px32;
+        color: $blue;
+        font-weight: 500;
+
+        @media screen and (max-width: 992px) {
+            font-size: $px28;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: $px24;
+        }
+
+        @media screen and (max-width: 359px) {
+            font-size: $px22;
+        }
+
+        @media screen and (max-width: 359px) {
+            font-size: $px20;
+        }
+    }
+
+    h2 {
+        font-size: $px64;
+        font-weight: 500;
+        margin-top: 20px;
+        @media screen and (max-width: 992px) {
+            font-size: $px40;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: $px32;
+        }
+
+        @media screen and (max-width: 359px) {
+            font-size: $px26;
+        }
+
+        @media screen and (max-width: 359px) {
+            font-size: $px24;
+        }
+    }
+
+    p {
+        max-width: 798px;
+        margin: 0 auto;
+        font-size: $px20;
+        line-height: 32px;
+        font-weight: 400;
+        color: $primary-color;
+        margin-top: 50px;
+        @media screen and (max-width:992px) {
+            font-size: $px14;
+            margin-top: 20px;
+        }
+    }
+}
+.ref-top-sec {
+    text-align: center;
+    margin-top: 90px;
+    @media screen and (max-width:992px) {
+        margin-top: 40px;
+    }
+    .mobile-verification {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        margin: 50px auto 0;
+        justify-content: space-between;
+        gap: 24px;
+        @media screen and (max-width:575px) {
+            flex-flow: column;
+        }
+
+        input[type='number'] {
+            width: 100%;
+            height: 58px;
+            border-radius: 25px;
+            border: 0;
+            box-sizing: border-box;
+            background-color: rgba($secondary-color, $alpha: 0.1);
+            padding: 20px 32px;
+            font-size: 18px;
+            font-weight: 400;
+            color: $primary-color;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .btn {
+            font-size: $px18;
+            font-weight: 500;
+            width: 192px;
+            padding: 20px 32px;
+        }
+    }
+
+    .clicnic-img {
+        margin-top: 160px;
+        @media screen and (max-width:992px) {
+            margin-top: 60px;
+        }
+    }
+
+    .ref-point {
+        display: inline-block;
+        width: 100%;
+        margin-top: 35px;
+
+        ul {
+            display: flex;
+            gap: 35px;
+            @media screen and (max-width:992px) {
+               flex-flow: column;
+            }
+
+            li {
+                width: 25%;
+                text-align: left;
+                @media screen and (max-width:992px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            h4 {
+                font-size: $px32;
+                font-weight: 500;
+                color: $secondary-color;
+                margin-top: 30px;
+                @media screen and (max-width:992px) {
+                    font-size: $px22;
+                    margin-top: 0px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: $primary-color;
+                text-align: left;
+                margin-top: 20px;
+                @media screen and (max-width:992px) {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.sharing-sec {
+    background-color: $gray-color-t2;
+    border-radius: 50px;
+    padding: 95px 125px 30px 170px;
+    align-items: center;
+    display: flex;
+    gap: 143px;
+    margin-top: 198px;
+    @media screen and (max-width:1200px) {
+        margin-top: 60px;
+        padding:50px 20px;
+        gap: 60px;
+    }
+
+    @media screen and (max-width:992px) {
+        margin-top: 60px;
+        padding:50px 20px;
+        flex-flow: column;
+        gap: 20px;
+    }
+
+    .left-img {
+        flex-shrink: 0;
+        width: 40%;
+        @media screen and (max-width:992px) {
+            width: 100%;
+        }
+    }
+
+    .right-detail {
+        width: 60%;
+        @media screen and (max-width:992px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: $px32;
+            color: $blue;
+            font-weight: 500;
+            @media screen and (max-width: 992px) {
+                font-size: $px28;
+            }
+    
+            @media screen and (max-width: 575px) {
+                font-size: $px26;
+            }
+    
+            @media screen and (max-width: 359px) {
+                font-size: $px24;
+            }
+    
+            @media screen and (max-width: 359px) {
+                font-size: $px20;
+            }
+        }
+
+        h2 {
+            font-size: $px64;
+            font-weight: 500;
+            margin-top: 20px;
+            @media screen and (max-width: 992px) {
+                font-size: $px40;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: $px36;
+            }
+
+            @media screen and (max-width: 359px) {
+                font-size: $px28;
+            }
+
+            @media screen and (max-width: 359px) {
+                font-size: $px26;
+            }
+        }
+
+        p {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: 400;
+            @media screen and (max-width:992px) {
+                font-size: $px14;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.toolkitsec {
+    margin-top: 160px;
+    @media screen and (max-width:992px) {
+        margin-top: 60px;
+    }
+
+    .toolBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top:60px;
+        gap: 80px;
+        @media screen and (max-width:992px) {
+            flex-flow: column;
+            margin-top: 60px;
+        }
+        .left-side{
+            max-width: 600px;
+            text-align: left;
+            @media screen and (max-width:992px) {
+                text-align: center;
+                order: 1;
+            }
+            h4{
+                font-size: $px48;
+                font-weight: 500;
+                @media screen and (max-width: 992px) {
+                    font-size: $px40;
+                }
+    
+                @media screen and (max-width: 575px) {
+                    font-size: $px36;
+                }
+    
+                @media screen and (max-width: 359px) {
+                    font-size: $px28;
+                }
+    
+                @media screen and (max-width: 359px) {
+                    font-size: $px26;
+                }
+            }
+            p{
+                font-size: $px16;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+        }
+        .right-side{
+            max-width: 500px;
+        }
+    }
+}
+
+.glass-sec{
+    background-color: $gray-color-t2;
+    border-radius: 50px;
+    padding: 100px 188px 0;
+    margin-top: 90px;
+    @media screen and (max-width:992px) {
+        flex-flow: column;
+        padding: 50px 20px 0;
+        overflow: hidden;
+        margin-top: 60px;
+    }
+    img{
+        display: block;
+        margin-top: 48px;
+    }
+    .ref-heading{
+        max-width: 100%;
+    }
+}
+.access-setup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 160px;
+    gap: 100px;
+    @media screen and (max-width:992px) {
+        flex-flow: column;
+        margin-top: 60px;
+        gap: 40px;
+    }
+  
+    .ref-heading{
+        text-align: left;
+        flex-shrink: 0;
+        width: 35%;
+        @media screen and (max-width:992px) {
+            width: 100%;
+            order: 1;
+            text-align: center;
+        }
+    }
+    .setupimg {
+        width: 65%;
+        @media screen and (max-width:992px) {
+            width: 100%;
+            order: 2;
+        }
+    }
+}
+
+.get-outer{
+    background-image: url(../images/getin-touch-bg.png);
+        background-position: right top 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+.getin-touch{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-bottom: 160px;
+    @media screen and (max-width:992px) {
+        flex-flow: column;
+        margin-top: 60px;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+    .ref-heading{
+        text-align: left;
+        max-width: 100%;
+        width: 50%;
+        @media screen and (max-width:992px) {
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            max-width: 100%;
+        }
+        .sales-btn{
+            margin-top: 50px;
+            display: flex;
+            gap: 24px;
+            @media screen and (max-width:992px) {
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+    }
+    .ref-point{
+        width: 50%;
+        @media screen and (max-width:992px) {
+           width: 100%;
+        }
+       ul li{
+            width: 50%;
+            @media screen and (max-width:992px) {
+                width: 100%;
+             }
+            a{
+                color: $blue;
+                font-size: $px16;
+                font-weight: 500;
+                text-decoration: underline;
+                margin-top: 20px;
+                display: inline-block;
+            }
+        }
+    }
+}
+}

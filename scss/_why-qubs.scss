@@ -1,0 +1,106 @@
+.why-qubs{
+	padding-bottom: 160px;
+	h2 {
+		margin-bottom: 100px;
+	}
+	@media(max-width:1199px) {
+		padding-bottom: 80px;
+		h2{
+			margin-bottom: 70px;
+		}
+	}
+	@media(max-width:767px) {
+		padding-bottom: 60px;
+		h2{
+			margin-bottom: 50px;
+		}
+	}
+	@media(max-width:479px) {
+		padding-bottom: 50px;
+		h2{
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.qubs-row {
+	grid-gap: 80px;
+	gap: 80px;
+	@media(max-width:1199px) {
+		grid-gap: 50px;
+		gap: 50px;
+	}
+	@media(max-width:767px) {
+		grid-gap: 40px;
+		gap: 40px;
+	}
+	@media(max-width:479px) {
+		grid-gap: 30px;
+		gap: 30px;
+	}
+	.qubs-item{
+		max-width: 50%;
+		width: calc(50% - 40px);
+		padding-left: 145px;
+		position: relative;
+
+		@media(max-width:1199px) {
+			width: calc(50% - 25px);
+			padding-left: 120px;
+		}
+		@media(max-width:991px) {
+			max-width: 100%;
+			width: 100%;
+			padding-left: 120px;
+		}
+		@media(max-width:767px) {
+			padding-left: 0;
+			text-align: center;
+		}
+		@media(max-width:479px) {
+
+		}
+		@media(max-width:359px) {
+			padding-left: 45px;
+		}
+		.qubs-ico{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: 0;
+			@media(max-width:767px) {
+				width: 70px;
+				height: 70px;
+				position: static;
+				margin: 0 auto 10px;
+				display: block;
+			}
+			@media(max-width:479px) {
+				width: 50px;
+				height: 50px;
+				
+			}
+			@media(max-width:359px) {
+				width: 40px;
+				height: 40px;
+			}
+
+			img{
+				@media(max-width:479px) {
+					height: auto;
+				}
+			}
+		}
+		h5{
+			line-height: 1.2;
+			margin-bottom: 20px;
+			@media(max-width:479px) {
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+
+	
+}

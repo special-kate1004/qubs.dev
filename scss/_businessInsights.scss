@@ -1,0 +1,153 @@
+
+.businessInsights {
+	&:after , &:before {
+		display: none;
+	}
+	@media(min-width: 992px) {
+		&:after {
+			background-image: url('../images/bi-after.png');
+			width: 415px;
+			height: 591px;
+			top: 10%; transform: none;
+			background-position: top left;
+			display: block;
+		}
+		&:before {
+			background-image: url('../images/bi-before.png');
+			width: 436px;
+			height: 369px;
+			top: 14%; transform: none;
+			background-position: top right;
+			display: block;
+		}
+	}
+}
+
+.harness-sec {
+	h4 {
+		max-width: 1200px;
+		font-weight: 400;
+		@media(max-width: 767px) {
+			text-align : center;
+			font-size: $px22; line-height:1.4
+		}
+	}
+
+}
+
+.revenue-row {
+	margin: 0 -30px;
+	row-gap: 30px;
+	p{
+		font-size: $px16;
+	}
+	.w-half-tab{
+		padding: 0 30px;
+	}
+	figure {
+		margin-top: 25px;
+		font-size: 0;
+	}
+}
+.revenue-sec  {
+	@media(max-width: 767px) {
+		text-align : center
+	} 	
+}
+.dashboard{
+	.container {
+		> * {
+			max-width: 1000px;
+		}
+	}
+}
+
+.dashboard-row {
+	row-gap: 100px;
+	margin:  0 -40px;
+	@media(max-width: 991px) {
+		row-gap: 60px;
+	}
+	@media(max-width: 991px) {
+		row-gap: 45px;
+	}
+	.w-half-tab{
+		padding: 0 40px;
+	}
+}
+
+.nlp-section {
+	.heading-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+.nlp-graphs {
+	margin-top: 60px;
+	figure{
+		font-size: 0
+	}
+	@media (max-width: 767px) {
+		margin-top: 30px;
+		row-gap: 25px
+	}
+	.w-40{
+		width: 41%;
+		padding-right: 20px;
+		@media (max-width: 767px) {
+			width:100%;padding:0
+		}
+	}
+	.w-60{
+		width: 59%;
+		padding-left: 20px;
+		@media (max-width: 767px) {
+			width:100%;padding:0
+		}
+	}
+}
+
+
+.shadow-img {
+	img{
+		box-shadow: 0px 0px 21px -15px rgba(0, 0, 0, 0.35)
+	}
+}
+
+.pricing-details {
+	.bg-purple {
+		position: relative;
+		.pricing-col {
+			&.left {
+				background-color: transparent;
+				@media(max-width: 575px) {
+					margin-bottom:0;
+					padding:30px 20px;
+					text-align:center
+				}
+			}
+			&.right {
+				height: calc(100% + 40px);
+				width: 50%;
+				position: absolute;
+				top: -40px;
+				right: 0;
+				@media(max-width: 991px) {
+					position :relative; 
+					width:100%;
+					margin:0;
+					top:0;
+					border-radius : 30px;
+				}
+				@media(max-width: 767px) {
+					border-radius : 20px;
+				}
+				
+			}
+			.wrap {
+				width: 100%;
+				max-width: 440px;
+			}
+		}
+	}
+}

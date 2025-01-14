@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"> 
+
+
+<url>
+  <loc>https://qubs.com/</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://qubs.com/multi-site</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/single-site</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/mobile</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/radiology-clinics</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/ultrasound-clinic</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/scheduling</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/buisness-insights</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/reporting</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/integrations</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/online-booking</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/sms-fax</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/referes-portal</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/online-form</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/pricing</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/contact-sales</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qubs.com/contact-us</loc>
+  <lastmod>2024-05-14T06:54:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+
+</urlset>

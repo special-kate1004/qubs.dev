@@ -1,0 +1,146 @@
+.testimonial{
+	p{
+		padding-top: 10px;
+		color: #263242;
+		/*@media(max-width: 767px) { 
+			padding-bottom:35px
+		}*/
+		br {
+			display: block;
+			@media(max-width: 767px) {
+				display:none
+			}
+		}
+	}
+	strong {
+		font-weight: 700;
+	}
+	h3{
+		@media(max-width: 575px) {
+			text-align: center;
+		}
+	}
+}
+
+.here_more{
+	padding-top: 80px;
+	p {
+		a {
+			color: #1B76FF;
+			text-decoration: underline;
+		}
+	}
+	.btn {
+		margin: 0;
+	}
+	@media(max-width: 991px) {
+		padding-top: 60px;
+	}
+	@media(max-width: 479px) {
+		padding-top: 45px;
+	}
+	.d-flex {
+		gap: 50px;
+		@media(max-width: 991px) {
+			gap:  40px;
+		}
+		@media(max-width: 767px) {
+			gap:  35px;
+		}
+	}
+}
+.testimonial-slider {
+
+	padding-top: 80px;
+	@media(max-width: 991px) {
+		padding-top: 60px;
+	}
+	/*@media(max-width: 479px) {
+		padding-top: 45px;
+	}*/
+	.testimonial-item{
+		width: 500px;
+		border-radius: 30px;
+		padding: 48px;
+		margin-right: 30px;
+		@media(max-width: 1199px) {
+			width: 460px;
+			padding: 40px;
+		}
+		@media(max-width: 767px) {
+			width: 430px;
+			padding: 35px;
+			border-radius: 20px;
+		}
+		@media(max-width: 479px) {
+			width: auto;
+			padding: 25px 20px; 
+			border-radius: 15px;
+			margin-right: 15px;
+		}
+		
+		.testimonial-item-in{
+			height: 100%;
+			padding-bottom: 165px;
+			position: relative;
+			@media(max-width: 767px) {
+				padding-bottom: 120px;
+			}
+			@media(max-width: 479px) {
+				padding-bottom: 100px;
+			}
+			.qoute-icon{
+				font-size: 0;
+				width: 48px;
+				margin-bottom: 24px;
+				display: block;
+			}
+			p{
+				font-size: $base-font ;
+				line-height: 1.6;
+				@media(max-width: 767px) {
+					font-size: $px15;
+				}
+				@media(max-width: 479px) {
+					font-size: $px14;
+				}
+			}
+			.name-bottom{
+				position: absolute;
+				bottom: 0;
+			}
+			.name-bottom{
+				.profile-img{
+					width: 64px;
+					height: 64px;
+					img{
+						border-radius: 50%;
+					}
+				}
+				.profile-name{
+					padding-left: 16px;
+					width: calc(100% - 64px);
+					h6{
+						color: $primary-color;
+						line-height: 1;
+						font-size: $px18;
+					}
+					p{
+						color: $primary-color;
+						line-height: 1;
+						font-size: $px18;
+						font-weight: 600;
+						@media(max-width: 767px) {
+							font-size: $px16;
+						}
+						@media(max-width: 479px) {
+							font-size: $px14;
+						}
+					}
+				}
+			}
+		}
+		
+		
+	}
+}

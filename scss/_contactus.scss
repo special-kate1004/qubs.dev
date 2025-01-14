@@ -1,0 +1,415 @@
+.contactus{
+    height: 100vh;
+    @media screen and (max-height:1023px) {
+        height: 100%;
+    }
+    #wrapper,.main-section,.container{
+        height: 100%;
+    }
+    .main-section{
+        @media screen and (max-width:767px) {
+            padding: 0 20px;
+        }
+    }
+}
+
+.aboutus-block {
+    display: flex;
+    height:100%;
+    overflow-y: auto;
+    min-height: 100vh;
+
+    @media screen and (max-width:767px) {
+        flex-flow: column;
+    }
+
+   
+    .left-detail {
+        padding-top: 100px;
+        width: 100%;
+        background: url(../images/contactus.svg) no-repeat top 30% left 157%;
+        background-size: 50%;
+        padding-left: 100px;
+
+        @media screen and (min-width:1024px) and (max-width:1320px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width:767px) {
+            width: 100%;
+            padding-top: 50px;
+            padding-left: 0;
+        }
+
+
+        .title {
+            font-size: $px48;
+            font-weight: 500;
+            margin-top: 48px;
+
+            @media screen and (max-width: 767px) {
+                font-size: $px40;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: $px36;
+            }
+
+            @media screen and (max-width: 359px) {
+                font-size: $px28;
+            }
+
+            @media screen and (max-width: 359px) {
+                font-size: $px26;
+            }
+        }
+
+        .disc {
+            font-size: $px18;
+            color: $primary-color;
+            margin-top: 18px;
+            max-width: 554px;
+
+            @media screen and (max-width:767px) {
+                font-size: $px14;
+            }
+        }
+
+        .contact-point {
+            display: inline-block;
+            width: 100%;
+            margin-top: 70px;
+
+            li {
+                color: $secondary-color;
+                font-size: $px18;
+                padding-left: 40px;
+                margin-bottom: 26px;
+
+                @media screen and (max-width:767px) {
+                    font-size: $px16;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: "";
+                    background: url(../images/green-tick.svg) no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 100%;
+                }
+            }
+        }
+
+        .contact-partnership-box {
+            display: inline-block;
+            width: 100%;
+            margin-top: 100px;
+
+            @media screen and (max-width:767px) {
+                margin-top: 50px;
+            }
+
+            .small_title {
+                font-size: 18px;
+                font-weight: 600;
+                color: $secondary-color;
+
+                @media screen and (max-width:767px) {
+                    font-size: $px16;
+                }
+            }
+
+            .partner-logo {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-top: 20px;
+                align-items: center;
+                max-width: 658px;
+
+                li {
+                    // @media screen and (max-width:767px) {
+                    //     width: calc(50% - 12px);
+                    // }
+
+                    a{
+                        display: block;
+                        img{
+                            display: block;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .right-detail {
+        background: #fff;
+        padding: 60px 48px;
+        width: 45%;
+        max-width: 600px;
+        flex-shrink: 0;
+
+        @media screen and (min-width:1024px) and (max-width:1320px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width:767px) {
+            width: 100%;
+            margin-top: 80px;
+            padding: 30px 20px;
+            max-width: 100%;
+        }
+
+        .form-title {
+            font-size: $px24;
+            font-weight: 600;
+            color: $secondary-color;
+        }
+
+        .form-control {
+            margin-top: 32px;
+
+            .choices {
+                // Default styles for the Choices.js container
+                .choices__list--dropdown {
+                    background-color: #fff;
+                    border: 1px solid rgba(31, 34, 38, 0.1);
+                    border-radius: 12px;
+                }
+        
+                // Styling the placeholder within Choices.js
+                .choices__item--selectable {
+                    padding: 10px;
+                    color: #323840; // Placeholder text color
+                    &:hover {
+                        background-color: #f2f2f2; // Change on hover
+                    }
+                }
+        
+                .choices__placeholder {
+                    color: rgba(38, 50, 66, 0.4);
+                font-size: 16px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 15px;
+                top: 17px;
+                padding: 0 5px;
+                background: #fff;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+                }
+        
+                // Styling the input within Choices.js
+                .choices__input {
+                    font-size: $px16; // Consistent font size
+                    height: 58px; // Consistent height with other inputs
+                    background-color: #fff;
+                    color: rgba(38, 50, 66, 0.4);
+                    border-radius: 12px; 
+                }
+            }
+            
+            .form-outer {
+                display: flex;
+                gap: 20px;
+
+                @media screen and (max-width:1023px) {
+                    flex-flow: column;
+                    gap: inherit;
+                }
+            }
+
+            .did-floating-label-content {
+                position: relative;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            .did-floating-label {
+                color: rgba(38, 50, 66, 0.4);
+                font-size: 16px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 15px;
+                top: 17px;
+                padding: 0 5px;
+                background: #fff;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+
+                @media screen  and (max-width:1200px) {
+                    font-size: $px14;
+                }
+              
+            }
+
+            .did-floating-input,
+            .did-floating-select {
+                font-size: $px16;
+                display: block;
+                width: 100%;
+                height: 58px;
+                padding: 0 20px;
+                background: #fff;
+                color: #323840;
+                border: 1px solid rgba(31, 34, 38, 0.1);
+                border-radius: 12px;
+                box-sizing: border-box;
+
+                @media screen and (min-width:1024px) and (max-width:1200px) {
+                    font-size: $px14;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: $px14;
+                }
+
+                &:focus {
+                    outline: none;
+
+                    ~.did-floating-label {
+                        top: -8px;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            select.did-floating-select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            select.did-floating-select::-ms-expand {
+                display: none;
+            }
+
+            .did-floating-input:not(:placeholder-shown)~.did-floating-label {
+                top: -8px;
+                font-size: 13px;
+            }
+
+            .did-floating-select:not([value=""]):valid~.did-floating-label {
+                top: -8px;
+                font-size: 13px;
+            }
+
+            .did-floating-select[value=""]:focus~.did-floating-label {
+                top: 11px;
+                font-size: 13px;
+            }
+
+            .did-floating-select:not([multiple]):not([size]) {
+                background: url(../images/down-arrow.svg) no-repeat;
+                background-position: right 15px top 50%;
+                background-repeat: no-repeat;
+            }
+
+            .did-error-input {
+
+                .did-floating-input,
+                .did-floating-select {
+                    border: 2px solid #9d3b3b;
+                    color: #9d3b3b;
+                }
+
+                .did-floating-label {
+                    font-weight: 600;
+                    color: #9d3b3b;
+                }
+
+                .did-floating-select:not([multiple]):not([size]) {
+                    background: url(../images/down-arrow.svg) no-repeat;
+                }
+            }
+
+            .input-group {
+                display: flex;
+
+                .did-floating-input {
+                    border-radius: 0 4px 4px 0;
+                    border-left: 0;
+                    padding-left: 0;
+                }
+            }
+
+            .input-group-append {
+                display: flex;
+                align-items: center;
+                /*   margin-left:-1px; */
+            }
+
+            .input-group-text {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                height: 34px;
+                color: #323840;
+                padding: 0 5px 0 20px;
+                font-size: 12px;
+                text-align: center;
+                white-space: nowrap;
+                border: 1px solid #3D85D8;
+                border-radius: 4px 0 0 4px;
+                border-right: none;
+            }
+        }
+
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            -webkit-appearance: none;
+            opacity: 0;
+        }
+
+        .datepicker:not([multiple]):not([size]) {
+            background: url(../images/calendar-icon.svg) no-repeat;
+            background-position: right 15px top 50%;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .booking-btn {
+            width: 100%;
+            background-color: $blue;
+            color: $white;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+    }
+
+    .not {
+        font-size: $px12;
+        color: rgba(38, 50, 66, 0.4);
+        margin-top: 24px;
+    }
+
+}

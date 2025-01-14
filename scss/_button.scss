@@ -1,0 +1,95 @@
+
+/*button Style*/
+.btn{
+	font-size: $base-font;	
+	padding: 15px 32px;
+	line-height: 1;
+	border-radius: 100px;
+	display: inline-block;
+	outline: none;
+	box-shadow: none;
+	font-weight: 500;
+    white-space: nowrap;
+	position: relative;
+	.btn-ico {
+		margin-left : 15px;
+		display: inline-block;
+		width: auto;
+		max-width: 25px;
+	}
+	&.btn-lg{
+		padding: 19px 48px;
+		font-size: $px18;
+		@media(max-width: 1199px){
+			font-size:$px17
+			
+		}
+		@media(max-width: 768px){
+			padding: 16px 32px;
+		}
+		
+		@media(max-width: 479px){
+			font-size:$px16	
+		}
+		@media(max-width: 359px){
+			padding: 15px 26px;
+			font-size:$px14
+		}
+	}
+	&.btn-outline{
+		background-color: transparent;
+		border: 1px solid $secondary-color;
+		color: $secondary-color;
+		&:hover{
+			background-color: $secondary-color;
+			color: $white;
+		}
+	}
+	&.btn-primary{
+		background-color: $secondary-color;
+		color: $white;
+		&:hover{
+			background-color: $gray-color;
+			color: $secondary-color;
+		}
+	}
+	&.btn-secondary{
+		background-color: $gray-color;
+		color: $secondary-color;
+		&:hover{
+			background-color: $secondary-color;
+			color: $white;
+		}
+	}
+	&.btn-white{
+		background-color: $white;
+		color: $secondary-color;
+		&:hover{
+			background-color: $secondary-color;
+			color: $white;
+		}
+	}
+
+	span{
+		line-height: 1;
+		margin-right: 5px;
+		width: 16px;
+		display: inline-block;
+		font-size: 0;
+		vertical-align: middle;
+	}
+
+	@media(max-width: 768px){
+		padding: 13px 24px;
+		font-size:$px14
+
+	}
+	@media(max-width: 479px){
+		font-size:$px14		
+	}
+	@media(max-width: 359px){
+		padding: 13px 18px;
+		font-size:$px13
+	}
+}
+/*button Style*/

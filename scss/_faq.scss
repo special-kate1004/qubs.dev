@@ -1,0 +1,149 @@
+.faq{
+    padding: 160px 0;
+    position: relative;
+    background-color: $white;
+
+    @media (max-width: 1080px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .entry-title {
+        margin-bottom: 100px;
+      
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        h3{
+            margin: 0;
+        }
+    }
+
+    .faq-wrap{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+
+        .inner-wrap{
+            padding: 33px 32px 33px 48px;
+            border-radius: 32px;
+            background-color: $gray-color-t2;
+            font-family: $primary-font;
+
+            @media (max-width: 991px) {
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 20px 45px 20px 20px;
+                position: relative;
+            }
+
+            &.is-active{
+                h2{
+                    button{
+                        &:after{
+                            content: " ";
+                            transform: rotate(-270deg);
+                            top: 3px;
+                        }
+                    }
+                }
+
+                .content{
+                    margin-top: 12px;
+                } 
+            }
+
+            h2{
+                button{
+                    padding: 0;
+                    font-size: 24px;
+                    line-height: 1.1;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-family: $primary-font;
+
+                    @media (max-width: 991px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: 520px) {
+                        font-size: 16px;
+                    }
+
+
+                    &:after{
+                        content: ' ';
+                        background-image: url(../images/angle-right.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 20px;
+                        height: 20px;
+                        transition: all 0.5s;
+
+                        @media (max-width: 767px) {
+                            position: absolute;
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+
+            p{
+                margin-bottom: 25px;
+                font-size: 16px;
+                font-weight: 400;
+                color: $primary-color;
+                
+                @media (max-width: 991px) {
+                    br{
+                        display: none;
+                    }
+                }
+            }
+
+            ul{
+                padding-left: 20px;
+
+                li{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $primary-color;
+                    margin-bottom: 5px;
+                    position: relative;
+
+                    a{
+                        color: $blue;
+
+                        &:hover{
+                        }
+                    }
+
+                    &:before{
+                        content: ' ';
+                        position: absolute;
+                        left: -10px;
+                        top: 8px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $primary-color;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

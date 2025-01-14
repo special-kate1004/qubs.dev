@@ -1,0 +1,259 @@
+/*intro-setion*/
+.rect-img{
+	position: absolute;
+	z-index: -1;
+	width: 100px;
+	height: 100px;
+	right: 0;
+	top: 100px;
+	img{
+		border-radius: 0;
+	}
+}
+.intro-setion{
+	z-index: 1;
+	position: relative;
+	&:after ,
+	&:before {
+		content: '';
+		position: absolute;
+		border-radius: 50px;
+		width: 935px;
+		height: 522px;
+		right: -4%;
+		top: 13%;
+		border: 2px solid #263142;
+		opacity: 5%;
+		z-index: -1;
+	}
+	&:after {
+		right: auto;
+		left: 32%;
+		top: 24%;
+		width: 600px;
+		height: 600px;
+	}
+	.intro-sec-in {
+		padding: 110px 0 140px;
+		@media(min-width: 992px) {
+			@include d-flex
+		}
+	}
+	.heading {
+		max-width: 55%;
+		width: 55%;
+		padding-right: 60px;
+	}
+	.right-intro{
+		padding-top: 35px;
+		max-width: 36%;
+		width: 36%;
+		padding-left: 60px;
+		p {
+			margin-bottom: 60px;
+		}
+		.btn {
+			margin: 0;
+		}
+	}
+	@media (max-width: 1699px) {
+		&:after {
+			left: 10%;
+		}
+	}
+	@media (max-width: 1439px) {
+		.right-intro{
+			padding: 0;
+		}
+	}
+	@media (max-width: 1310px) {
+		&:after ,
+		&:before {
+			width: 700px;
+			height: 460px;
+		}
+		&:after {
+			width: 400px;
+			height: 400px;
+			left: 15%;
+		}
+		.right-intro{
+			max-width: 39%;
+		    width: 39%;
+		}
+		.intro-sec-in {
+			padding: 80px 0 100px;
+		}
+		.right-intro {
+			 p {
+			 	margin-bottom: 30px;
+		 	}
+		}
+		
+	}
+	@media (max-width: 1199px) {
+		&:after ,
+		&:before ,
+		.rect-img {
+			display: none;
+		}
+		.heading {padding-right: 40px;}
+		.right-intro {width: 45%; max-width: 45%}
+	}
+	@media (max-width: 991px) {
+		.intro-sec-in {
+			padding: 50px 0 60px 0;
+		}
+		.heading ,
+		.right-intro {
+			max-width: 100%;
+			width: 100%;
+			padding: 0;
+			p{
+				padding-top: 25px;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.intro-sec-in {
+			padding: 40px 0 50px 0;
+		}
+		.heading ,
+		.right-intro {
+			p{
+				padding-top: 20px;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		.intro-sec-in {
+			text-align: center;
+			padding: 30px 0 40px 0;
+		}
+	}
+}
+.heading-wrap{
+	p{
+		font-size: $px20;
+	}
+	@media (max-width: 991px) {
+		p{
+			font-size: $px18;
+		}
+	}
+	@media (max-width: 767px) {
+		p{
+			font-size: $px16;
+		}
+	}
+	@media (max-width: 480px) {
+		p{
+			font-size: $px15;
+		}
+	}
+	@media (max-width: 359px) {
+		p{
+			font-size: $px14;
+		}
+	}
+}
+.intro-img{
+	position: relative;
+	z-index: 1;
+	.rect-img{
+		top: -50px;
+		left: 25%;
+		img {
+			border-radius: 0;
+		}
+	}
+}
+
+.home { 
+
+	.intro-img {
+		position: relative;
+		z-index: 1;
+		border-radius: 32px; // Rounded corners for the border 
+		border: 1px solid rgba(38, 49, 66, 0.05);
+		padding: 46px 112px 46px 112px; // Space between the border and the image
+		background: linear-gradient(107deg, rgba(0, 102, 255, 0.20) 0%, rgba(152, 99, 243, 0.20) 100%); // Direct gradient background
+
+	
+		.rect-img{
+			top: -50px;
+			left: 25%;
+			img {
+				border-radius: 0;
+			}
+		}
+	
+		img {
+			width: 100%; // Ensure the image fills the padded area
+			height: auto; // Maintain aspect ratio
+			display: block; // Ensures the image does not have extra space below
+		}
+	
+		// Adjustments for responsive design on smaller screens
+		@media (max-width: 767px) {
+			border-width: 10px; // Thinner border on smaller screens
+			padding: 5px; // Less padding on smaller screens
+		}
+	}
+
+}
+/*intro-setion*/
+.squre-gray{
+	border-radius: 8px;width: 40px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	background: rgba(38, 49, 66, 0.05);
+
+}
+.scan-row{
+	position: relative;
+}
+.home .main-section{
+    background-image: url(../images/home-pattern.png);
+    background-position: left top 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .intro-setion{
+		&:after ,
+		&:before {
+			display:none;
+		}
+
+	}    @media(max-width : 767px) {
+   		background-image:none
+    }
+}
+
+.get-in-touch{
+	.left {
+		position: relative;
+		.squre-gray {
+			bottom: auto;
+    		top: 130px;
+		}
+	}
+	.right{
+		position: relative;
+		.squre-gray {
+			background-color: #3FB8A6;
+    bottom: -70px;
+    left: 40%;
+    right: auto;
+		}
+	}
+	&.get-in-touch3{
+		.right{
+			.squre-gray {
+				background-color: #FF895D;
+			}
+		}
+	}
+}
