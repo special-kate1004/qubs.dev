@@ -356,6 +356,14 @@
   }
 }
 
+@media screen and (max-width: 1134px) {
+  .intro-img {
+    .play-button {
+      font-size: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .x-ray-pg {
     .intro-img .thumbnail .play-button {

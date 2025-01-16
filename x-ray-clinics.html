@@ -324,7 +324,7 @@
               <img
                 src="assets/images/play-btn-mobile.png"
                 alt="play btn"
-                class="mobile-view"
+                class="play-btn mobile-view"
               />
             </div>
             <video
@@ -1411,25 +1411,28 @@
       document.addEventListener("DOMContentLoaded", function () {
         let isPlaying = false;
         const thumbnail = document.getElementById("thumbnail");
-        const thumbnailBtn = thumbnail.querySelector(".mobile-view");
+        const thumbnailBtn = thumbnail.querySelector(".play-btn");
         const video = document.querySelector("video");
 
         thumbnail.addEventListener("click", function () {
+          if (isPlaying) video.pause();
+          else video.play();
           isPlaying = !isPlaying;
+          console.log(isPlaying);
 
           if (window.matchMedia("(max-width: 576px)").matches) {
-            thumbnailBtn.style.display = isPlaying ? "none" : "block";
             thumbnail.querySelector(".play-button").style.marginTop = "-100px";
+            thumbnailBtn.style.display = isPlaying ? "none" : "block";
           } else {
             thumbnail.style.display = isPlaying ? "none" : "block";
           }
-
           video.style.display = "block";
-          if (isPlaying) {
-            video.play();
-          } else {
-            video.pause();
-          }
+        });
+
+        video.addEventListener("click", function () {
+          isPlaying = !isPlaying;
+          if (isPlaying) video.pause();
+          else video.play();
         });
       });
     </script>
