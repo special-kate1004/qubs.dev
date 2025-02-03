@@ -1,12 +1,48 @@
 .x-ray-pg {
   background: transparent;
 
+  .container {
+    width: 100%;
+    max-width: 1328px;
+  }
+
+  .hero-top-wrap .wrap {
+    max-width: 100%;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    max-width: 1120px !important;
+  }
+
   h4 {
     font-size: 52px;
   }
 
   p {
     font-size: 18px;
+  }
+
+  .btn.btn-blue {
+    padding: 16px 24px 16px 32px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 16px;
+
+    .btn-ico {
+      margin-left: 10px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 2px;
+    }
   }
 
   .mb-40 {
@@ -171,7 +207,7 @@
       .solution-slide-item {
         display: flex;
         flex-direction: column;
-        min-height: 650px;
+        min-height: 669px;
         gap: 20px;
         justify-content: space-between;
 
@@ -248,7 +284,11 @@
         flex-direction: column;
 
         img {
-          width: 40px;
+          width: 48px;
+        }
+
+        p {
+          font-size: 16px;
         }
       }
     }
