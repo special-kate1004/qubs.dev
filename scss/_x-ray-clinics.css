@@ -15,6 +15,10 @@
     }
   }
 
+  .contact-sales {
+    gap: 40px;
+  }
+
   h3 {
     display: inline-block;
     max-width: 1120px !important;
@@ -227,6 +231,9 @@
         left: auto;
         background-position: center;
         margin-top: -80px;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 10px;
       }
 
       .flickity-prev-next-button.next,
@@ -237,6 +244,9 @@
         right: 0;
         background-position: center;
         margin-top: -80px;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -521,6 +531,20 @@
       .potential-list {
         gap: 20px;
       }
+    }
+
+    .flickity-prev-next-button.next,
+    .flickity-prev-next-button.slick-next,
+    .slick-arrow.next,
+    .slick-arrow.slick-next {
+      margin-top: -100px !important;
+    }
+
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.slick-prev,
+    .slick-arrow.previous,
+    .slick-arrow.slick-prev {
+      margin-top: -100px !important;
     }
   }
 }
