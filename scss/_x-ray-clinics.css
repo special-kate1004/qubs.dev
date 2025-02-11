@@ -16,6 +16,19 @@
     }
   }
 
+  .reporting {
+    padding: 110px 0;
+  }
+
+  .intro-img {
+    .container {
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
   .contact-sales {
     gap: 40px;
   }
@@ -558,6 +571,9 @@
       }
     }
 
+    .reporting {
+      padding: 40px 0;
+    }
     .intro-img {
       .thumbnail {
         top: 0;
