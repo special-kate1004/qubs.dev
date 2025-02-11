@@ -661,6 +661,10 @@
       }
     }
 
+    h1 {
+      font-size: 52px;
+    }
+
     .mb-80 {
       margin-bottom: 40px;
       margin-top: 40px;
