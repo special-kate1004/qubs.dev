@@ -26,11 +26,26 @@
       rel="stylesheet"
     />
     <link
+      defer
       rel="stylesheet"
       type="text/css"
       href="https://unpkg.com/flickity@2/dist/flickity.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link
+      rel="preload"
+      href="assets/images/intro-dashboard.webp"
+      as="image"
+      media="(min-width: 768px)"
+    />
+
+    <link
+      rel="preload"
+      href="assets/images/intro-dashboard-mobile.webp"
+      as="image"
+      media="(max-width: 767px)"
+    />
   </head>
 
   <body class="home" id="body">
@@ -50,7 +65,7 @@
           <div class="main-menu">
             <ul>
               <li class="active menu-item-has-children">
-                <a href="javascript:void(0)">Solutions</a>
+                <a href="#">Solutions</a>
                 <ul class="sub-menu">
                   <li>
                     <div class="d-flex">
@@ -58,7 +73,7 @@
                         <h6>Use cases</h6>
                         <ul>
                           <li class="menu-list">
-                            <a href="multi-site.html"></a>
+                            <a href="./multi-site/"></a>
                             <span class="menu-icon">
                               <img
                                 src="assets/images/menu-icon-01.svg"
@@ -119,12 +134,12 @@
                               Ultrasound</a
                             >
                           </li>
-                          <!-- <li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/radiology-02.svg"></span> X-Ray</a></li>
-												<li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/gynecology-02.svg"></span> OB-GYN</a></li>
-												<li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/dentistry-02.svg"></span> Dental</a></li>
-												<li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/orthopedics-03.svg"></span> Chiropractor</a></li>
-												<li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/sound_detection_dog_barking.svg"></span> Veterinary</a></li>
-												<li class="disabled"><a href="javascript:void(0)"><span class="menuico"><img src="assets/images/school-02.svg"></span> Universities</a></li> -->
+                          <!-- <li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/radiology-02.svg"></span> X-Ray</a></li>
+												<li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/gynecology-02.svg"></span> OB-GYN</a></li>
+												<li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/dentistry-02.svg"></span> Dental</a></li>
+												<li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/orthopedics-03.svg"></span> Chiropractor</a></li>
+												<li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/sound_detection_dog_barking.svg"></span> Veterinary</a></li>
+												<li class="disabled"><a href="#"><span class="menuico"><img src="assets/images/school-02.svg"></span> Universities</a></li> -->
                         </ul>
                       </div>
                     </div>
@@ -133,7 +148,7 @@
                 <span class="menu-arrow" id="arrow_01"></span>
               </li>
               <li class="menu-item-has-children">
-                <a href="javascript:void(0)">Platform</a>
+                <a href="#">Platform</a>
                 <ul class="sub-menu">
                   <li>
                     <div class="d-flex">
@@ -288,8 +303,14 @@
             <div class="intro-img img-0">
               <figure>
                 <img
-                  src="assets/images/intro-dashboard.png"
+                  src="assets/images/intro-dashboard.webp"
                   alt="Intro Dashboard Image"
+                  class="desktop-view"
+                />
+                <img
+                  src="assets/images/intro-dashboard-mobile.webp"
+                  alt="Intro Dashboard Image"
+                  class="mobile-view"
                 />
               </figure>
             </div>
@@ -311,7 +332,8 @@
               <div class="cloud-img w-half-tab text-center">
                 <figure>
                   <img
-                    src="assets/images/cloud-img.png"
+                    loading="lazy"
+                    src="assets/images/cloud-img.webp"
                     alt="Cloud Schedule Img"
                   />
                 </figure>
@@ -322,6 +344,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/calendar_month.svg"
                         alt="icons"
                         width="22"
@@ -332,6 +355,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/stack.svg"
                         alt="icons"
                         width="22"
@@ -342,6 +366,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/dashboard.svg"
                         alt="icons"
                         width="22"
@@ -353,6 +378,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/format_color_fill.svg"
                         alt="icons"
                         width="22"
@@ -363,6 +389,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/manage_search2.svg"
                         alt="icons"
                         width="22"
@@ -373,6 +400,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/assignment_turned_in.svg"
                         alt="icons"
                         width="24"
@@ -383,6 +411,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/comment.svg"
                         alt="icons"
                         width="22"
@@ -400,7 +429,11 @@
             <div class="cloud-row scan-row reverse-row mb-160">
               <div class="cloud-img w-half-tab d-flex-center-between positive">
                 <figure>
-                  <img src="assets/images/scan-img.png" alt="Cloud Scan Img" />
+                  <img
+                    loading="lazy"
+                    src="assets/images/scan-img.webp"
+                    alt="Cloud Scan Img"
+                  />
                 </figure>
                 <h5>
                   Get reports out faster with <br />
@@ -424,7 +457,11 @@
             <div class="cloud-row mb-160">
               <div class="cloud-img w-half-tab text-center">
                 <figure>
-                  <img src="assets/images/report.png" alt="Cloud Report Img" />
+                  <img
+                    loading="lazy"
+                    src="assets/images/report.png"
+                    alt="Cloud Report Img"
+                  />
                 </figure>
               </div>
               <div class="cloud-txt w-half-tab">
@@ -456,6 +493,7 @@
               <div class="cloud-img w-half-tab text-center">
                 <figure>
                   <img
+                    loading="lazy"
                     src="assets/images/delivery-img.png"
                     alt="Cloud Delivery Img"
                   />
@@ -472,6 +510,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/clinical_notes.svg"
                         alt="icons"
                         width="25"
@@ -482,6 +521,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/print.svg"
                         alt="Fax"
                         width="24"
@@ -492,6 +532,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/alternate_email.svg"
                         alt="Email"
                         width="24"
@@ -502,6 +543,7 @@
                   <li class="cloud-list">
                     <span class="icons"
                       ><img
+                        loading="lazy"
                         src="assets/images/sms.svg"
                         alt="SMS"
                         width="24"
@@ -607,7 +649,7 @@
                   </div>
                 </div>
                 <div class="solution-item upcoming">
-                  <a ref="javascript:void(0)" class="linkbox"></a>
+                  <a href="#" class="linkbox"></a>
                   <div class="d-flex itemIn">
                     <span class="sol-icon">
                       <svg
@@ -640,7 +682,7 @@
                   </div>
                 </div>
                 <div class="solution-item upcoming">
-                  <a href="javascript:void(0)" class="linkbox"></a>
+                  <a href="#" class="linkbox"></a>
                   <div class="d-flex itemIn">
                     <span class="sol-icon">
                       <svg
@@ -673,7 +715,7 @@
                   </div>
                 </div>
                 <div class="solution-item upcoming">
-                  <a href="javascript:void(0)" class="linkbox"></a>
+                  <a href="#" class="linkbox"></a>
                   <div class="d-flex itemIn">
                     <span class="sol-icon">
                       <svg
@@ -706,7 +748,7 @@
                   </div>
                 </div>
                 <div class="solution-item upcoming">
-                  <a href="javascript:void(0)" class="linkbox"></a>
+                  <a href="#" class="linkbox"></a>
                   <div class="d-flex itemIn">
                     <span class="sol-icon">
                       <svg
@@ -739,7 +781,7 @@
                   </div>
                 </div>
                 <div class="solution-item upcoming">
-                  <a href="javascript:void(0)" class="linkbox"></a>
+                  <a href="#" class="linkbox"></a>
                   <div class="d-flex itemIn">
                     <span class="sol-icon">
                       <svg
@@ -797,6 +839,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_01.svg"
                     width="132"
                     height="40"
@@ -807,6 +850,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_02.svg"
                     width="185"
                     height="50"
@@ -817,6 +861,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_03.svg"
                     width="75"
                     height="56"
@@ -827,6 +872,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_04.svg"
                     width="123"
                     height="50"
@@ -837,6 +883,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_05.svg"
                     width="395"
                     height="88"
@@ -847,6 +894,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_02.svg"
                     width="185"
                     height="50"
@@ -857,6 +905,7 @@
               <div class="logo-items">
                 <span class="liit d-flex-center">
                   <img
+                    loading="lazy"
                     src="assets/images/partner_03.svg"
                     width="75"
                     height="56"
@@ -875,6 +924,7 @@
                 <div class="qubs-item">
                   <soan class="qubs-ico">
                     <img
+                      loading="lazy"
                       src="assets/images/manage_search.svg"
                       width="100"
                       height="100"
@@ -892,6 +942,7 @@
                 <div class="qubs-item">
                   <soan class="qubs-ico">
                     <img
+                      loading="lazy"
                       src="assets/images/rocket_launch.svg"
                       width="100"
                       height="100"
@@ -909,6 +960,7 @@
                 <div class="qubs-item">
                   <soan class="qubs-ico">
                     <img
+                      loading="lazy"
                       src="assets/images/gpp_maybe.svg"
                       width="100"
                       height="100"
@@ -926,6 +978,7 @@
                 <div class="qubs-item">
                   <soan class="qubs-ico">
                     <img
+                      loading="lazy"
                       src="assets/images/dashboard_customize.svg"
                       width="100"
                       height="100"
@@ -965,6 +1018,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -979,7 +1033,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -993,6 +1051,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -1007,7 +1066,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -1021,6 +1084,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -1035,7 +1099,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -1049,6 +1117,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -1063,7 +1132,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -1077,6 +1150,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -1091,7 +1165,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -1105,6 +1183,7 @@
               <div class="testimonial-item-in">
                 <span class="qoute-icon">
                   <img
+                    loading="lazy"
                     src="assets/images/format_quote.svg"
                     width="48"
                     height="33"
@@ -1119,7 +1198,11 @@
                 </p>
                 <div class="name-bottom d-flex-center">
                   <div class="profile-img img-cover">
-                    <img src="assets/images/profile.png" alt="Img" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/profile.webp"
+                      alt="Img"
+                    />
                   </div>
                   <div class="profile-name">
                     <h6>Darlene Robertson</h6>
@@ -1139,7 +1222,10 @@
               <a href="contact-sales.html" class="btn btn-blue btn-lg"
                 >Contact sales
                 <span class="btn-ico"
-                  ><img src="assets/images/arrow_right_alt.svg" alt="" /></span
+                  ><img
+                    loading="lazy"
+                    src="assets/images/arrow_right_alt.svg"
+                    alt="" /></span
               ></a>
             </div>
           </div>
@@ -1165,7 +1251,11 @@
               <div class="start-col right d-flex">
                 <div class="contact-col">
                   <div class="icon">
-                    <img src="assets/images/icon-intergration.svg" alt="" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/icon-intergration.svg"
+                      alt=""
+                    />
                   </div>
                   <div class="details">
                     <h5>Integrations</h5>
@@ -1176,7 +1266,11 @@
 
                 <div class="contact-col">
                   <div class="icon">
-                    <img src="assets/images/icon-insight.svg" alt="" />
+                    <img
+                      loading="lazy"
+                      src="assets/images/icon-insight.svg"
+                      alt=""
+                    />
                   </div>
                   <div class="details">
                     <h5>Business Insights</h5>
@@ -1201,6 +1295,7 @@
             <div class="f_logo">
               <a href="index.html"
                 ><img
+                  loading="lazy"
                   src="assets/images/logo.svg"
                   width="107"
                   height="24s"
@@ -1225,10 +1320,10 @@
                   <li><a href="radiology-clinics.html">Radiology</a></li>
                   <li><a href="ultrasound-clinic.html">Ultrasound</a></li>
                   <!-- <li><a href="xray-clinic.html">X-Ray</a></li>
-								<li class="disabled"><a href="javascript:void(0)">OB-GYN</a></li>
-								<li class="disabled"><a href="javascript:void(0)">Dental</a></li>
-								<li class="disabled"><a href="javascript:void(0)">Veterinary</a></li>
-								<li class="disabled"><a href="javascript:void(0)">Universities</a></li> -->
+								<li class="disabled"><a href="#">OB-GYN</a></li>
+								<li class="disabled"><a href="#">Dental</a></li>
+								<li class="disabled"><a href="#">Veterinary</a></li>
+								<li class="disabled"><a href="#">Universities</a></li> -->
                 </ul>
               </div>
               <div class="f_menus f_menus_lg">
@@ -1270,7 +1365,7 @@
         </div>
       </footer>
 
-      <div class="video-pop">
+      <!-- <div class="video-pop">
         <span id="close" class="overlay"></span>
         <div class="video-in video-item-01">
           <video controls id="player">
@@ -1282,9 +1377,12 @@
             <source src="assets/sample02.mp4" type="video/mp4" />
           </video>
         </div>
-      </div>
+      </div> -->
     </div>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"
+    ></script>
     <script type="text/javascript">
       const screenWidth = window.innerWidth; // Correctly gets the browser's viewport width
       const contWdth = document.getElementById("container").offsetWidth;
@@ -1348,26 +1446,26 @@
     </script>
     <script type="text/javascript">
       /*video Popup*/
-      const body = document.getElementById("body");
-      const vid01 = document.getElementById("video-01");
-      const vid02 = document.getElementById("video-02");
-      const close = document.getElementById("close");
-      vid01.addEventListener("click", () => {
-        body.classList.add("video-pop01");
-        player.currentTime = 0;
-        player.play();
-      });
-      vid02.addEventListener("click", () => {
-        body.classList.add("video-pop02");
-        player2.currentTime = 0;
-        player2.play();
-      });
-      close.addEventListener("click", () => {
-        body.classList.remove("video-pop01");
-        body.classList.remove("video-pop02");
-        player.pause();
-        player2.pause();
-      });
+      // const body = document.getElementById("body");
+      // const vid01 = document.getElementById("video-01");
+      // const vid02 = document.getElementById("video-02");
+      // const close = document.getElementById("close");
+      // vid01?.addEventListener("click", () => {
+      //   body.classList.add("video-pop01");
+      //   player.currentTime = 0;
+      //   player.play();
+      // });
+      // vid02?.addEventListener("click", () => {
+      //   body.classList.add("video-pop02");
+      //   player2.currentTime = 0;
+      //   player2.play();
+      // });
+      // close?.addEventListener("click", () => {
+      //   body.classList.remove("video-pop01");
+      //   body.classList.remove("video-pop02");
+      //   player.pause();
+      //   player2.pause();
+      // });
     </script>
   </body>
 </html>
